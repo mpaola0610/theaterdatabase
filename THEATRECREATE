@@ -1,0 +1,28 @@
+CREATE TABLE customer(
+	customer_id SERIAL PRIMARY KEY,
+	payment_type VARCHAR(150),
+	billing_info VARCHAR(150),
+	age NUMERIC(3),
+	cust_rewards VARCHAR(150)
+);
+
+CREATE TABLE ticket(
+	ticket_id SERIAL PRIMARY KEY,
+	payment_amount NUMERIC(2,2),
+	time TIME,
+	assign_seat VARCHAR(4),
+	available_tix NUMERIC(3)
+);
+
+CREATE TABLE movie(
+	movie_id SERIAL PRIMARY KEY,
+	room VARCHAR(2),
+	--FOREIGN KEY(ticket_id) REFERENCES ticket(ticket_id),
+	rating VARCHAR(5)
+);
+
+CREATE TABLE concession(
+	concession_id SERIAL PRIMARY KEY,
+	product VARCHAR(100),
+	payment_amount NUMERIC (3,2)
+);

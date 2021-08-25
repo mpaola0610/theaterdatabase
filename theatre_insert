@@ -1,0 +1,47 @@
+INSERT INTO customer(
+    customer_id,
+    payment_type,
+    billing_info,
+    age,
+    cust_rewards
+)VALUES(
+    1,
+    'cash',
+    '111 111 111',
+    31,
+    none
+);
+
+INSERT INTO ticket(
+    ticket_id,
+    payment_amount,
+    time,
+    assign_seat,
+    available_tix
+)VALUES(
+    1,
+    07.50,
+	10:30,
+    'G-20'
+    29
+);
+
+INSERT INTO movie(
+	movie_id,
+	room,
+	rating
+)VALUES(
+	1,
+	'B2'
+	'R'
+);
+
+INSERT INTO concession(
+	concession_id,
+	product,
+	payment_amount
+)VALUES(
+	1,
+	'popcorn',
+	10.00
+);
